@@ -118,7 +118,7 @@ public class App
 	 System.out.println("Prestados: " + libro2.getPrestados());
 	 System.out.println();
 	 }
-/*
+/*sdfjdfskajldsfklasdfkj
 	public static void main(String[] args) {
 		 // Se crean 4 fracciones
 		 Fraccion f1 = new Fraccion(1, 4); // Fracción 1/4
