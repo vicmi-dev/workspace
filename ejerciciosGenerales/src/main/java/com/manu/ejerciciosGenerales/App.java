@@ -3,6 +3,8 @@ package com.manu.ejerciciosGenerales;
 import java.io.IOException;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 /**
  * Hello world!
  *
@@ -105,12 +107,51 @@ public class App
 		}
 	}
 	
+	/*
+	 * 11. Programa para codificar o decodificar un texto utilizando el método de
+	 * cifrado de César. Supondremos que el texto solo contiene letras mayúsculas o
+	 * minúsculas. La letras serán las correspondientes al alfabeto inglés (26
+	 * caracteres, excluimos la ñ y Ñ). En este método de cifrado cada letra del
+	 * texto se sustituye por otra letra que se encuentra N posiciones adelante en
+	 * el alfabeto. Se considera que el alfabeto es circular, es decir, la letra
+	 * siguiente a la ‘z’ es la ‘a’. Por ejemplo, si N es 3, la ‘a’ se transformaría
+	 * en ‘d’, la ‘b’ en ‘e’, la ‘c’ en ‘f’, etc. Ejemplo de cifrado César: si el
+	 * texto es “casa” y N = 3 el texto cifrado es “fdvd” Para descifrar un texto se
+	 * realiza la operación contraria. Se calcula la letra que está N posiciones por
+	 * detrás en el alfabeto. Como el alfabeto es circular, la letra anterior a la
+	 * ‘a’ es la ‘z’. El programa pedirá por teclado un texto, a continuación el
+	 * valor de N y si queremos codificar o decodificar el texto. Finalmente se
+	 * mostrará el texto resultante.
+	 */
+	
+	public static void cesar() {
+		String text = JOptionPane.showInputDialog("Introduce un texto");
+		String cesar = JOptionPane.showInputDialog("Introduce la codificación");
+		int numCesar = Integer.parseInt(cesar);
+		char[] text1 = text.replaceAll(" ", "").toCharArray();
+		int i = 0;
+		int codigo = numCesar%26;
+		 
+		for (i = 0; i < text1.length; i ++) {
+			if (text1[i] >= 'a' && text1[i] <= 'z') {
+				if ((text1[i] + codigo) > 'z') {
+					JOptionPane.showInputDialog(text1[i]);
+				}
+			
+		}
+		
+	}
+	
 	public static void main( String[] args ) throws IOException
     {
         //numeros();
         //numeroCifras();
 		//grados();
 		//num2();
-		divisores();
+		//divisores();
+		//cesar();
+		//System.out.println((char) (('a' + 3)%27));
+		JOptionPane.showInputDialog("hola");
+		
     }
 }
