@@ -16,11 +16,11 @@ public class Empleado {
 
 	public Empleado(int id) {
 		this.id = id;
-		this.txt = JOptionPane.showInputDialog("-NUEVO EMPLEADO- \nNúmero de hijos:");
+		this.name = JOptionPane.showInputDialog("-NUEVO EMPLEADO- \nIntroduce tu nombre completo");
+		this.txt = JOptionPane.showInputDialog("Número de hijos:");
 		this.children = Integer.parseInt(txt);
 		this.txt = JOptionPane.showInputDialog("¿Estás casado o casada? Sí o No:");
 		this.married = txt.toLowerCase() == "no" ? false : true;
-		this.name = JOptionPane.showInputDialog("Introduce tu nombre completo");
 		this.txt = JOptionPane.showInputDialog("Sueldo:");
 		this.wage = Integer.parseInt(txt);
 		this.txt = JOptionPane.showInputDialog("Número de horas extra: ");

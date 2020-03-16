@@ -32,7 +32,7 @@ public class App
 	
     public static void main( String[] args )
     {
-    	//ejercicio7();
+    	ejercicio7();
     	//Dni dni = new Dni();
     	
     }
