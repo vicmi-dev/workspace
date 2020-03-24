@@ -33,7 +33,7 @@ public class Main {
 		// Java 8
 		
 		LocalDate now = LocalDate.now();
-		LocalDate dentro30dias = now.plusMonths(9);
+		LocalDate dentro30dias = now.plusDays(30);
 		LocalDate birth = LocalDate.of(1950, Month.JULY, 13);
 		System.out.println(now);
 		System.out.println(dentro30dias);

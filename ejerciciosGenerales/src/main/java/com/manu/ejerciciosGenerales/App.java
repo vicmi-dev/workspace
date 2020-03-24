@@ -123,35 +123,31 @@ public class App
 	 * valor de N y si queremos codificar o decodificar el texto. Finalmente se
 	 * mostrará el texto resultante.
 	 */
-	
-	public static void cesar() {
-		String text = JOptionPane.showInputDialog("Introduce un texto");
-		String cesar = JOptionPane.showInputDialog("Introduce la codificación");
-		int numCesar = Integer.parseInt(cesar);
-		char[] text1 = text.replaceAll(" ", "").toCharArray();
-		int i = 0;
-		int codigo = numCesar%26;
-		 
-		for (i = 0; i < text1.length; i ++) {
-			if (text1[i] >= 'a' && text1[i] <= 'z') {
-				if ((text1[i] + codigo) > 'z') {
-					JOptionPane.showInputDialog(text1[i]);
-				}
-			
-		}
-		
-	}
+	/*
+	 * public static void cesar() { String text =
+	 * JOptionPane.showInputDialog("Introduce un texto"); String cesar =
+	 * JOptionPane.showInputDialog("Introduce la codificación"); int numCesar =
+	 * Integer.parseInt(cesar); char[] text1 = text.replaceAll(" ",
+	 * "").toCharArray(); int i = 0; int codigo = numCesar%26;
+	 * 
+	 * for (i = 0; i < text1.length; i ++) { if (text1[i] >= 'a' && text1[i] <= 'z')
+	 * { if ((text1[i] + codigo) > 'z') { JOptionPane.showInputDialog(text1[i]); }
+	 * 
+	 * }
+	 * 
+	 * }
+	 */
 	
 	public static void main( String[] args ) throws IOException
     {
-        //numeros();
+        numeros();
         //numeroCifras();
 		//grados();
 		//num2();
 		//divisores();
 		//cesar();
 		//System.out.println((char) (('a' + 3)%27));
-		JOptionPane.showInputDialog("hola");
+		//JOptionPane.showInputDialog("hola");
 		
     }
 }
